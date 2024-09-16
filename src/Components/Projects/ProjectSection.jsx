@@ -12,7 +12,7 @@ export default function ProjectSection(){
     useEffect(() => {
         const fetchRepos = async () => {
         const username = 'Davidfrank1999';
-        const repoNames = ['david-portifolio','bioinformatics', 'python_freecodecamp', 'front_end']; // Replace with your repository names
+        const repoNames = ['david-portfolio','bioinformatics', 'python_freecodecamp', 'front_end']; // Replace with your repository names
         const repoImg = [frame1,
             'https://repository-images.githubusercontent.com/790111308/54bd1933-8e59-4b0e-86e3-32f088c965d9',
              'https://media.licdn.com/dms/image/v2/D562DAQGSGlDp81PW_Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725601415715?e=1726488000&v=beta&t=BMuEqf_RxdU43zZpj6uMM6bCyaFmdLHiLfI4v0FgPKk',
