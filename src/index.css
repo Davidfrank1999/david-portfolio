@@ -1,0 +1,11 @@
+body {
+    display: block;
+    background: #ECE8DD;
+    margin: 0;
+    width: 1440px;
+    overflow: auto;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+}
+

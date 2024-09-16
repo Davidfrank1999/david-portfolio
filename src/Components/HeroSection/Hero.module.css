@@ -1,0 +1,70 @@
+/* Container */
+.HeroContainer{
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* Intro */
+.HeroCommon {
+    border-radius: 27.50px;
+    background-color: #FCF9F9;
+    margin: 10px;
+
+}
+.HeroIntro {
+    width: 650px;
+    height: 425px;
+    left: 0;
+    top: 0;
+    position: relative;
+    
+}
+
+.introContent {
+
+    width: 85%;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    
+
+}
+
+.hello {
+    font-size: 5.5rem;
+    font-weight: 100;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.introText {
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+/* Pic */
+.HeroPic{
+    height: 425px;
+}
+
+/* Hero About */
+.HeroAbt {
+    width: 250px;
+    height:auto;
+    flex-grow: 1;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 1px ;
+    margin: 40px;
+    line-height: 25px;
+}

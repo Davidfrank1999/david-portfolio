@@ -1,0 +1,40 @@
+
+.FooterSection {
+    width: 100vw;
+    height: 260px;
+    background-color:#dba39ab3 ;
+    margin: 10px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    bottom: -125px;
+    
+}
+
+
+.BoatImg {
+    position: relative;
+    width: 400px;
+    object-fit: cover;
+    
+}
+
+.FooterContact {
+    margin: auto ;
+    line-height: 30px;
+   
+}
+
+.FooterContact li {
+    list-style-type: none;
+    width: 260px;
+    
+}
+
+.FooterContact hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    
+}

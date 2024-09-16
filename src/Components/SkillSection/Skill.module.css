@@ -1,0 +1,94 @@
+
+.Skill {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+    /* flex-grow: 1; */
+    
+}
+.SkillContainer1 {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 55px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    border-radius: 27.50px;
+    background-color: #FCF9F9;
+    margin: 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Kaushan Script', sans-serif;
+    font-weight: 800;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+}
+
+/* Container 2 */
+
+.SkillContainer2 {
+    width:fit-content ;
+    
+    height:auto;
+    position: relative;
+    border-radius: 27.50px;
+    background-color: #FCF9F9;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    padding: 10px;
+  
+    
+}
+
+/* skill Discionary */
+
+.SkillSet {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-width: 440px
+}
+
+  
+  .topic_column {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 5px;
+    background-color: #dba39a94;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .topic_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .skills_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 200px;
+  }
+  
+  .skill_box {
+    padding: 3px 9px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+  }
+  
