@@ -13,7 +13,7 @@ export default function Footer(){
                     <li>Phone - 7339695655</li>
                 
                 <hr></hr>
-                    <li>Made using ReactJS</li>
+                    <li>Built using ReactJS</li>
                 </ul>
             </div>
             <img className={styles.BoatImg} src={boy_computor} alt="boy computor" />
