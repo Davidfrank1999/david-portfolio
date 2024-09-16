@@ -16,5 +16,5 @@ git init
 git add .
 git commit -m "deploy github"
 git branch -M main
-git remote add origin https://github.com/Davidfrank1999/david-portifolio.git
+git remote add origin https://github.com/Davidfrank1999/david-portfolio.git
 git push -u origin main
