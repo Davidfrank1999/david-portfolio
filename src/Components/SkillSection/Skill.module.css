@@ -4,7 +4,7 @@
     flex-direction: row;
     width: auto;
     height: fit-content;
-    /* flex-grow: 1; */
+    
     
 }
 .SkillContainer1 {
@@ -90,5 +90,20 @@
     color: white;
     font-size: 12px;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .Skill {
+      flex-direction: column;
+    }
+
+    .SkillContainer1 {
+      margin: auto;
+    }
+
+    .SkillSet {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
   }
   

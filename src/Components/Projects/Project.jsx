@@ -14,13 +14,13 @@ export default function Project({ repo }) {
           <p className={styles.ProjectInfo}>{repo.description}</p>
           <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
             <button
-              class={styles.Btn}
+              className={styles.Btn}
               href={repo.html_url}
               target="_blank"
               rel="noopener noreferrer"
             >
               <div
-                class={styles.sign}
+                className={styles.sign}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -35,7 +35,7 @@ export default function Project({ repo }) {
                 </svg>
               </div>
 
-              <div class={styles.text}>GitHub Documentation</div>
+              <div className={styles.text}>GitHub Documentation</div>
             </button>
           </a>
         </div>

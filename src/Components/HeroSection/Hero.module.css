@@ -51,6 +51,8 @@
 /* Pic */
 .HeroPic{
     height: 425px;
+    width: auto;
+    
 }
 
 /* Hero About */
@@ -67,4 +69,19 @@
     letter-spacing: 1px ;
     margin: 40px;
     line-height: 25px;
+}
+
+@media only screen and (max-width: 750px) {
+    .HeroIntro {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .introContent {
+        padding: auto;
+    }
+    .hello, .introText {
+        font-size: 3em;
+    } 
+
 }

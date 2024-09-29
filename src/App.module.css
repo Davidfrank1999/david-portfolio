@@ -18,3 +18,17 @@
     margin: 0 170px;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 1080px){
+    .Info {
+        left:0;
+        margin: auto;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .ContactSection {
+        flex-direction: column;
+    }
+}

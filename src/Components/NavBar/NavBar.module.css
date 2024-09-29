@@ -30,7 +30,7 @@
 }
 
 .NavTopContainer2 {
-    width:50%;
+    width: 50%;
     right: 0px;
     display: flex;
     flex-direction: row;
@@ -255,3 +255,52 @@
       opacity: 1;
     }
   }
+
+
+/* Mobile view */
+
+@media only screen and (max-width: 1080px){
+    .Navbarleft {
+        display: none;
+    }
+
+    .NavTopContainer1 {
+        flex:2;
+    }
+
+    .NavTopContainer2 {
+        flex:1;
+    }
+
+    .Banner , .Rectangle2 {
+        display: none;
+    }
+
+    .NavtopCommon {
+        top:10;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .NavTopContainer1 {
+        flex: 1;
+    }
+
+    .NavName {
+        flex: 1;
+    }
+
+    .NavText {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .NavTopContainer2 {
+        display: none;
+    }
+
+    .Rectangle1 {
+        display: none;
+    }
+}
