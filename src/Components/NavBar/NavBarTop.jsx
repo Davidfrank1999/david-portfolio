@@ -6,10 +6,11 @@ import TopBanner from "../../assets/sea_beach.jpg";
 
 export default function NavBarTop() {
   return (
-    <nav className={styles.Navbartop}>
-      <div className={styles.NavTopContainer1}>
-        <div className={`${styles.Rectangle3} ${styles.NavtopCommon}`}>
-          <img className={styles.LogoImg} src={Logo} />
+    <nav className="w-full h-32 top-0 fixed z-2 bg-whitw bg-opacity-10 backdrop-blur-lg flex flex-row">
+      
+      <div className="w-1/2 flex flex-row">
+        <div className="relative top-6 h-14 flex bg-opacity-70 bg-dba39a">
+          <img className="w-14 h-14 rounded-full object-cover" src={Logo} />
         </div>
         <div className={styles.NavText}>
           <span className={styles.NavName}>David Franklin D</span>

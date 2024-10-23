@@ -7,7 +7,7 @@ import styles from './NavBar.module.css'
 export default function NavBar(){
 
     return (
-      <nav className={styles.Nav}>
+      <nav className="flex flex-col z-2">
         <NavBarTop />
         <NavBarLeft />
       </nav>

@@ -16,13 +16,13 @@ function App() {
     <>
       <NavBar />
 
-      <section className={styles.Info}>
+      {/* <section className={styles.Info}>
         <Hero />
         <Skill />
         <ProjectSection />
         <Contact />
       </section>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
