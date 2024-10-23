@@ -8,19 +8,15 @@ export default function NavBarTop() {
   return (
     <nav className={styles.Navbartop}>
       <div className={styles.NavTopContainer1}>
-        <div className={`${styles.Rectangle3} ${styles.NavtopCommon}`}>
-          <img className={styles.LogoImg} src={Logo} />
-        </div>
-        <div className={styles.NavText}>
+        <img className={styles.LogoImg} src={Logo} />
+        <div>
           <span className={styles.NavName}>David Franklin D</span>
-          <br></br>
-          
-            <span className={styles.Navinfo}>Portifolio</span>
-          
+          <br/>
+          <span className={styles.Navinfo}>Portifolio</span>
         </div>
       </div>
 
-      <div className={styles.NavTopContainer2}>
+      {/* <div className={styles.NavTopContainer2}>
         <a href={ResumePdf} target="_blank" className={styles.ResumeLink}>
         <div className={`${styles.Rectangle1} ${styles.NavtopCommon}`}>
           
@@ -34,7 +30,7 @@ export default function NavBarTop() {
             src={TopBanner}
           />
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }

@@ -1,306 +1,36 @@
-
-.Nav {
-    display: flex;
-    z-index: 2;
-    flex-direction: column;
-
+.navContainer {
+    position: relative;
 }
-
-/* Nav Top */
 .Navbartop {
-    width: 100%;
-    height: 125px;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
+    position: sticky;
     z-index: 2;
+    display: flex;
     background: rgba(255, 255, 255, 0.1); /* Transparent white background */
-    
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    
+    backdrop-filter: blur(10px); /* Blur effect */ 
 }
 
 .NavTopContainer1 {
-    width: 50%;
-    left: 0px;
+    height: 110px;
     display: flex;
-    flex-direction: row;
-}
-
-.NavTopContainer2 {
-    width: 50%;
-    right: 0px;
-    display: flex;
-    flex-direction: row;
+    flex:1;
     justify-content: space-around;
-    
+    align-items:center;
 }
 
 .LogoImg {
     width: 55px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 27.50px;
+    height: 55px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.NavtopCommon {
-    top: 24px;
-    position: relative;
-    background-color: #dba39ab3;
-    border-radius: 27.50px;
-    height: 55px;
-
-}
-
-        .Rectangle1 {
-            width: 175px;
-            cursor: pointer;
-            overflow: hidden;
-        }
-            .Rectangle1 span{
-                display: flex;
-                justify-content: center;
-                margin: 16px;
-                position: relative;
-                font-size: 1.1em;
-                font-family: 'Times New Roman', Times, serif;
-                letter-spacing: 5px;
-                z-index: 1;
-                
-                
-            }
-            
-            .ResumeLink {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            .Rectangle1::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left:0;
-                width: 0px;
-                height: 0px;
-                background: black;
-                border-radius: 50%;
-                transition: 1s;
-            }
-
-            .Rectangle1:hover::before {
-                
-                width: 700px;
-                height: 700px;
-            }
-
-        .Rectangle2 {
-            width: 350px;
-
-        }
-
-        .Rectangle3 {
-            width: 55px;
-            left: 37px;
-            display: flex;
-        }
-
-            .Banner {
-                object-fit: cover;
-                border-radius: 27.50px;
-                height: 55px;
-            }
-    
-
-/* NavTop Text */
-
-.NavText {
-    width: 427px;
-    left: 150px;
-    top: 24px;
-    position: relative;
-    color: #DBA39A;
-}
-
-        .NavName {
-            font-size: 2rem;
-            font-weight: 500;
-
-        }
-
-        .Navinfo {
-            font-size: 0.8rem;
-            font-weight: 100;
-        }
-
-/* Nav Left */
-
-.Navbarleft {
-    width: 100px;
-    height: 82vh;
-    flex-grow:1;
-    top:125px;
-    position: fixed;
-    /* background-color: #3d3d3d; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
-}
-
-.NavleftCommon {
-    border-radius: 27.5px;
-    left: 37px;
-    width: 55px;
-    position: relative;
-    background-color: #dba39ab3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-        .NavleftUpper {
-            height: 226px;
-            /* top: 21px; */    
-        }
-
-        .NavleftMiddle {
-            height: 131px;
-            /* top: 261px;  */
-        }
-
-        .NavleftBottom {
-            height: 121px;
-            /* top: 411px;  */ 
-        }
-
-
-/* Nav Icons */
-
-.NavIcon {
-    width: 55px;
-    height: 55px;
-    
-    border-radius: 27.50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
-}
-
-.NavIcon:hover {
-    
-    transition: 2s all ease-in-out 0s;
-    background: radial-gradient(circle, rgba(255, 207, 48, 0.911) 40%, transparent 100%);
-
-}
-
-.NavIcon:hover .ToolTipText {
-    visibility: visible;
-  }
-
-
-.IconSet {
-    width: 25px;
-}
-
-/* Icon Text */
-
-.tooltip {
-    position: absolute;
-    right: -105px;
-    opacity: 0;
-    background-color: rgb(12, 12, 12);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .2s;
-    pointer-events: none;
-    letter-spacing: 0.5px;
-    
-  }
-  
-  .tooltip::before {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: rgb(12, 12, 12);
-    background-size: 1000%;
-    background-position: center;
-    transform: rotate(45deg);
-    left: -5%;
-    transition-duration: .3s;
-  }
-  
-  .NavIcon:hover .tooltip {
-    opacity: 1;
-    transition-duration: .3s;
-  }
-
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-10px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-
-
-/* Mobile view */
-
-@media only screen and (max-width: 1080px){
-    .Navbarleft {
-        display: none;
-    }
-
-    .NavTopContainer1 {
-        flex:2;
-    }
-
-    .NavTopContainer2 {
-        flex:1;
-    }
-
-    .Banner , .Rectangle2 {
-        display: none;
-    }
-
-    .NavtopCommon {
-        top:10;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    
-    .NavTopContainer1 {
-        flex: 1;
-    }
 
     .NavName {
-        flex: 1;
+        font-size: xx-large;
+        color: var(--letter-color);
     }
 
-    .NavText {
-        width: fit-content;
-        height: fit-content;
+    .Navinfo {
+        font-size: small;
+        color: var(--letter-color);
     }
-
-    .NavTopContainer2 {
-        display: none;
-    }
-
-    .Rectangle1 {
-        display: none;
-    }
-}
