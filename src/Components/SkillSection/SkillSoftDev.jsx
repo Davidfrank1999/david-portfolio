@@ -5,7 +5,7 @@ export default function SkillSoftDev(){
     const topics = {
         "Front End": ["HTML", "CSS", "JavaScript", "ReactJS", "Flask", "Django"],
         "Back End": ["Python",],
-        "Database": ["PSQL"]
+        "Database": ["PSQL","SQLite"]
       };
     
       // List of colors to apply to skill boxes

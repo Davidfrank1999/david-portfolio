@@ -1,17 +1,17 @@
 /* Container */
 .HeroContainer{
     width: 100%;
-    
     position: relative;
     display: flex;
     flex-wrap: wrap;
     
 }
+
 /* Intro */
 .HeroCommon {
-    border-radius: 27.50px;
-    background-color: #FCF9F9;
-    margin: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    margin: var(--common-margin);
 
 }
 .HeroIntro {
@@ -20,19 +20,16 @@
     left: 0;
     top: 0;
     position: relative;
-    
 }
 
 .introContent {
 
     width: 85%;
-    padding: 85px;
+    padding: 45px;
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
     justify-content: center;
-    
 
 }
 
@@ -52,7 +49,7 @@
 .HeroPic{
     height: 425px;
     width: auto;
-    
+    margin: auto;
 }
 
 /* Hero About */
