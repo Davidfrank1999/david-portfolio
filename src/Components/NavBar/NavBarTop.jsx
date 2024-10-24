@@ -15,7 +15,7 @@ export default function NavBarTop() {
         </div>
       </div>
 
-      {/* <div className={styles.NavTopContainer2}>
+      <div className={styles.NavTopContainer2}>
         <a href={ResumePdf} target="_blank" className={styles.ResumeLink}>
         <div className={`${styles.Rectangle1} ${styles.NavtopCommon}`}>
           
@@ -29,7 +29,7 @@ export default function NavBarTop() {
             src={TopBanner}
           />
         </div>
-      </div> */}
+      </div>
     </nav>
   );
 }
