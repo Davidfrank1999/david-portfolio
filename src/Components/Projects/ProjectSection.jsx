@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styles from './Project.module.css'
 import Project from './Project'
 
-import frame1 from "../../assets/Frame_1.png"
+import PortifolioWeb from "../../assets/portifolioWeb.png"
 import RegisterApp from "../../assets/RegisterApp.png"
 import ToDoApp from "../../assets/ToDoApp.png"
+import PythonfreeCode from "../../assets/Python_Projects.png"
 
 export default function ProjectSection(){
 
@@ -16,9 +17,9 @@ export default function ProjectSection(){
         try {
             const username = 'Davidfrank1999';
             const repoNames = ['david-portfolio', 'ReactNative_ToDoApp', 'ReactNative_RegisterApp', 'bioinformatics', 'python_freecodecamp', 'front_end']; // Replace with your repository names
-            const repoImg = [frame1,RegisterApp,ToDoApp,
+            const repoImg = [PortifolioWeb,RegisterApp,ToDoApp,
                 'https://repository-images.githubusercontent.com/790111308/54bd1933-8e59-4b0e-86e3-32f088c965d9',
-                'https://media.licdn.com/dms/image/v2/D562DAQGSGlDp81PW_Q/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725601415715?e=1728216000&v=beta&t=xevdF3qiLbRi76vTHmPBe-BOMY6qTLjFHEHQeDajp80',
+                PythonfreeCode,
                 'https://i.pinimg.com/564x/17/22/24/1722244094738967b5c0b748e92571bf.jpg']
 
             const repoData = await Promise.all(repoNames.map(async (repoName, index) => {
