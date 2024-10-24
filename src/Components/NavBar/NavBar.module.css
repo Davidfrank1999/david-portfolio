@@ -2,6 +2,7 @@
 .Navbartop {
     position: fixed;
     width: 100%;
+    max-width: 1440px;
     z-index: 2;
     display: flex;
     background: rgba(255, 255, 255, 0.1); /* Transparent white background */
@@ -33,3 +34,81 @@
         font-size: small;
         color: var(--letter-color);
     }
+
+
+/* Nav Left */
+
+.Navbarleft {
+    width: 100px;
+    height: 82vh;
+    top:110px;
+    position: fixed;
+    /* background-color: #3d3d3d; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.NavleftCommon {
+    border-radius: 27.5px;
+    left: 37px;
+    width: 55px;
+    position: relative;
+    background-color: #dba39ab3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+        .NavleftUpper {
+            height: 226px;
+            /* top: 21px; */    
+        }
+
+        .NavleftMiddle {
+            height: 131px;
+            /* top: 261px;  */
+        }
+
+        .NavleftBottom {
+            height: 121px;
+            /* top: 411px;  */ 
+        }
+
+
+/* Nav Icons */
+
+.NavIcon {
+    width: 55px;
+    height: 55px;
+    
+    border-radius: 27.50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.NavIcon:hover {
+    
+    transition: 2s all ease-in-out 0s;
+    background: radial-gradient(circle, rgba(255, 207, 48, 0.911) 40%, transparent 100%);
+
+}
+
+.NavIcon:hover .ToolTipText {
+    visibility: visible;
+  }
+
+
+.IconSet {
+    width: 25px;
+}
+
+@media only screen and (max-width: 400px){ 
+    .Navbarleft {
+        display: none;
+    }
+  }

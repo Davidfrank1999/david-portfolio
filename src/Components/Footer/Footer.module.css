@@ -1,6 +1,7 @@
 
 .FooterSection {
-    width: 100vw;
+    width: 100%;
+    z-index: 1;
     background-color:var(--secondary-color-opac) ;
     margin: 10px 0;
     overflow: hidden; /* need changess for medium size view */

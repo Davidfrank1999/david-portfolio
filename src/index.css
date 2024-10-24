@@ -3,8 +3,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -35,4 +33,8 @@ body {
     --common-margin: 10px;
   }
 
-
+  @media only screen and (min-width: 1440px){ 
+    body {
+      margin:auto;
+    }
+  }

@@ -1,13 +1,17 @@
 .FullConatiner {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
 }
 .Info {
     top:110px;
     position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1100px;
 }
 
 .ContactSection {
@@ -21,12 +25,19 @@
 
 @media only screen and (min-width: 400px){
     .Info {
-        top:125px;
+        top:115px;
+        left:140px;
         position: relative;
-        left: 200px;
         display: flex;
         flex-direction: column;
-        width: 83.4%;
-        max-width: 1440px;
+        width: 90%;
     }
 }
+
+@media only screen and (min-width: 1440px){ 
+    .FullContainer {
+      max-width: 1200px; /* Set your desired max width */
+      margin: 0 auto; /* Center the container */
+      padding: 0 20px; /* Optional padding for better spacing */
+    }
+  }

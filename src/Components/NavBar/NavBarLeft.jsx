@@ -18,7 +18,7 @@ export default function NavBarLeft() {
   return (
     <div className={styles.Navbarleft}>
         <div className={`${styles.NavleftUpper} ${styles.NavleftCommon}`}>
-          <Link className={`${styles.NavIcon}`} activeClass='active' to="HeroSection" spy={true} smooth={true} offset={-200} duration={500}><img className={`${styles.IconSet}`} src={HomeIcon}/></Link><span className={styles.tooltip}>Download</span>
+          <Link className={`${styles.NavIcon}`} activeClass='active' to="HeroSection" spy={true} smooth={true} offset={-200} duration={500}><img className={`${styles.IconSet}`} src={HomeIcon}/></Link>
 
           <Link className={`${styles.NavIcon}`} activeClass='active' to="AboutSection" spy={true} smooth={true} offset={-200} duration={500}><img className={`${styles.IconSet}`} src={AboutIcon}/></Link>
           <Link className={`${styles.NavIcon}`} activeClass='active' to="SkillSection" spy={true} smooth={true} offset={-200} duration={500}><img className={`${styles.IconSet}`} src={SkillIcon}/></Link>

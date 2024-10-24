@@ -1,7 +1,6 @@
 import styles from "./NavBar.module.css";
 import Logo from "../../assets/Logo.jpg";
-import ResumePdf from "../../assets/DAVID_FRANKLIN_D_resume_BioIT_Software_developer.pdf"
-
+import ResumePdf from "../../assets/DAVID_FRANKLIN_D_resume_BioIT_Software_developer.pdf";
 import TopBanner from "../../assets/sea_beach.jpg";
 
 export default function NavBarTop() {

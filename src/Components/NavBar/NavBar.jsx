@@ -8,7 +8,7 @@ export default function NavBar(){
     return (
       <nav >
         <NavBarTop />
-        {/* <NavBarLeft /> */}
+        <NavBarLeft />
       </nav>
       );
     

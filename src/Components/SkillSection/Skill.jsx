@@ -12,8 +12,10 @@ export default function Skill(){
                 <div className={styles.title}>BioInfo Analysit</div>
                 <div className={styles.title}>Software Developer</div>
             </div>
-            <SkillAnalyst />
-            <SkillSoftDev />
+            <div className={styles.SkillContainer2}>
+                <SkillAnalyst />
+                <SkillSoftDev />
+            </div>
             
         </section>
     )
