@@ -3,7 +3,7 @@ import styles from "./Project.module.css";
 export default function Project({ repo }) {
   return (
     <div className={styles.ProjectBox}>
-      <div className={styles.Box1}>
+      <div className={styles.GitContainer}>
         <img
           className={styles.Img}
           src={repo.image}
@@ -12,6 +12,7 @@ export default function Project({ repo }) {
         <div className={styles.TxtBox}>
           <h3>{repo.name}</h3>
           <p className={styles.ProjectInfo}>{repo.description}</p>
+          
           <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
             <button
               className={styles.Btn}
@@ -38,6 +39,7 @@ export default function Project({ repo }) {
               <div className={styles.text}>GitHub Documentation</div>
             </button>
           </a>
+
         </div>
       </div>
     </div>
