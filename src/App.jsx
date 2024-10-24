@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <>
+    <div className={styles.FullConatiner}>
       <NavBar />
       <section className={styles.Info}>
       <Hero />
@@ -22,7 +22,7 @@ function App() {
       <Contact />       
       </section>
       <Footer />
-    </>
+    </div>
   )
 }
 

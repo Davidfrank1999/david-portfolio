@@ -1,5 +1,8 @@
-
+.FullConatiner {
+    position: relative;
+}
 .Info {
+    top:110px;
     position: relative;
     display: flex;
     flex-direction: column;

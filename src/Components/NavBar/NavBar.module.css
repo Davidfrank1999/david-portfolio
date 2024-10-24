@@ -1,6 +1,7 @@
 
 .Navbartop {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     z-index: 2;
     display: flex;
     background: rgba(255, 255, 255, 0.1); /* Transparent white background */
