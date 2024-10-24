@@ -9,8 +9,8 @@ export default function Footer(){
             <div className={styles.FooterContact}>
                 <h3>Contact</h3>
                 <ul>
-                    <li>Email - davidfranklin1999@gmail.com</li>
-                    <li>Phone - 7339695655</li>
+                    <li><span>Email</span> - davidfranklin1999@gmail.com</li>
+                    <li><span>Phone</span> - 7339695655</li>
                 
                 <hr></hr>
                     <li>Built using ReactJS</li>

@@ -1,15 +1,15 @@
 
 .FooterSection {
     width: 100vw;
-    height: 260px;
-    background-color:#dba39ab3 ;
+    background-color:var(--secondary-color-opac) ;
     margin: 10px 0;
-    overflow: hidden;
+    overflow: hidden; /* need changess for medium size view */
     display: flex;
     justify-content: flex-start;
     position: relative;
     bottom: -125px;
-    
+    flex-direction: column-reverse;
+    height: fit-content;
 }
 
 
@@ -23,13 +23,20 @@
 .FooterContact {
     margin: auto ;
     line-height: 30px;
-   
+    
 }
 
+.FooterContact h3 {
+    font-family: 'Kaushan Script';
+}
 .FooterContact li {
     list-style-type: none;
     width: 260px;
-    
+    font-size: small;
+    float: center;
+}
+.FooterContact span {
+    font-size: medium;
 }
 
 .FooterContact hr {
@@ -39,9 +46,9 @@
     
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (min-width: 400px){
     .FooterSection { 
-        flex-direction: column;
+        flex-direction: row;
         height: fit-content;
     }
 
