@@ -45,6 +45,9 @@ export default function ProjectSection(){
 
     return(
         <section id="ProjectSection" className={styles.ProjectContainer}>
+            <div className={styles.headingDiv}>
+                <h3 className={styles.ProjectSecTitle}>Project Collections</h3>
+            </div>
             {repos.map(repo => (
                     <Project key={repo.id} repo={repo} />
                 ))}
