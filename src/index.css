@@ -1,12 +1,38 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+
 body {
+    box-sizing: border-box;
     display: block;
     background: #ECE8DD;
     margin: 0;
-    width: 1440px;
     overflow: auto;
     width: 100%;
     max-width: 1440px;
     height: auto;
+    line-height: 1.5;
 }
+
+:root {
+    --primary-color: #3490dc;
+    --secondary-color: #FCF9F9;
+    --third-color:#F5EBE0;
+    --secondary-color-opac:#dba39a94;
+    --letter-color: #DBA39A; 
+    --border-radius: 27.50px;
+    --common-margin: 10px;
+  }
 
 

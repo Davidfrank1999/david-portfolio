@@ -1,12 +1,9 @@
 
 .Info {
-    top:125px;
     position: relative;
-    left: 200px;
-
     display: flex;
     flex-direction: column;
-    width: 83.4%;
+    width: 100%;
     max-width: 1440px;
 }
 
@@ -19,16 +16,14 @@
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (min-width: 400px){
     .Info {
-        left:0;
-        margin: auto;
-        width: 95%;
-    }
-}
-
-@media only screen and (max-width: 750px){
-    .ContactSection {
+        top:125px;
+        position: relative;
+        left: 200px;
+        display: flex;
         flex-direction: column;
+        width: 83.4%;
+        max-width: 1440px;
     }
 }
