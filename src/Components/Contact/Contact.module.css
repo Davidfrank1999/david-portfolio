@@ -2,20 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #FCF9F9;
-  flex-grow: 1;
-  border-radius: 27.50px;
-  margin: 10px auto;
-  
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  margin:var(--common-margin);
   position: relative;
-  min-width: 500px;
-  padding: 5%;
-  margin: 10px;
-  
-   
+  padding: 5%;   
 }
 
-#contact {
+.contact {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -74,7 +68,7 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .submitBtn:hover .svg-wrapper {
+  .submitBtn:hover .svg_wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   

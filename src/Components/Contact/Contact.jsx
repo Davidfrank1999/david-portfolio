@@ -1,4 +1,4 @@
-import './Contact.css'
+import styles from './Contact.module.css'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import SocialLink from './SocialLink';
@@ -28,17 +28,17 @@ function Contact() {
 
 
     return(
-        <section id="ContactSection" className="contactPage">
+        <section id="ContactSection" className={styles.contactPage}>
           <SocialLink />
-            <div id="contact">
-                <h1 className="contactPageTitle">Contact Me</h1>
+            <div id="contact" className={styles.contact}>
+                <h1 className={styles.contactPageTitle}>Email Me</h1>
                 
                 <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                    <input type="text" className="name" placeholder="Your Name" name="user_name" />
-                    <input type="email" className="email" placeholder="Your Email" name="user_email" />
-                    <textarea className="msg" rows="10" placeholder="Your Message" name="message"></textarea>
-                    <button className="submitBtn" type="submit" value="Send" ><div className="svg-wrapper-1">
-                        <div className="svg-wrapper">
+                    <input type="text" className={styles.name} placeholder="Your Name" name="user_name" />
+                    <input type="email" className={styles.email} placeholder="Your Email" name="user_email" />
+                    <textarea className={styles.msg} rows="10" placeholder="Your Message" name="message"></textarea>
+                    <button className={styles.submitBtn} type="submit" value="Send" ><div className="svg-wrapper-1">
+                        <div className={styles.svg_wrapper}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
